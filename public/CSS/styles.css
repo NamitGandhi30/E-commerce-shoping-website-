@@ -1,0 +1,314 @@
+@font-face {
+  font-family: Futura;
+  src: url(./Futura-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./Gilroy-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+}
+
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #F7F7F7;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: burlywood; */
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#links {
+  padding: 10px;
+}
+
+#nav-part1 {
+  /* background-color: RED; */
+  height: 82px;
+  overflow: hidden;
+}
+
+#nav-part1 svg {
+  display: block;
+}
+
+#nav-part2 #links a {
+  text-transform: uppercase;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+#icons {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 100;
+}
+
+
+
+
+#page4 .container{
+  max-width: 1170px;
+  height: vh;
+  margin:auto;
+}
+#page4 .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+#page4 ul{
+  list-style: none;
+}
+#page4 .footer{
+  background-color: black;
+    padding: 70px 0;
+    margin-top: 28%;
+}
+#page4 .footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+#page4 .footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+#page4 .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+#page4 .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+#page4 .footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+#page4 .footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+#page4 .footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+#page4 .footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+.loginPage-wrapper,
+.addProduct-page {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.addProduct-page form,
+.loginPage-wrapper form {
+  background: #e5e5e5;
+  padding: 30px 20px;
+  text-align: center;
+}
+.input-wrapper input {
+  height: 28px;
+  border-radius: 10px;
+  border: 1px #ccc solid;
+  width: 200px;
+}
+.input-wrapper {
+  margin-bottom: 15px;
+}
+.input-wrapper label {
+  width: 120px;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+button {
+  background: rgb(229, 156, 186);;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  border: 0;
+  width: 140px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+.card-wrapper {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  margin-bottom: 14px;
+  position: relative;
+  width: 300px;
+}
+.cardBody img {
+  max-height: 140px;
+}
+.cardBody .title {
+  margin: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.cardBody .description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.categoryPage ul,
+.cartPage ul {
+  padding: 0;
+}
+.cartPage {
+  padding: 0px 30px;
+}
+.categoryPage ul li {
+  display: inline-block;
+  margin: 10px;
+}
+.categoryPage {
+  text-align: center;
+}
+.cardFooter {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+.cardHeader .deleteProduct {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+  background: none;
+  cursor: pointer;
+  width: auto;
+  padding: 0;
+}
+.homepage {
+  position: relative;
+}
+.homepage h1 {
+  letter-spacing: 2px;
+}
+.bannerText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.homepage img {
+  width: 100%;
+}
+.cardFooter button,
+.cardFooter form {
+  display: inline-block;
+}
+.checkBox-wrapper {
+  margin-bottom: 15px;
+}
+.Btn-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #285f5d;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  width: auto;
+}
+.coloured-btn {
+  background: #3e7674;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  border: 0;
+  width: 120px;
+  height: 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  font: 400 13.3px Arial;
+  display: inline-block;
+}
+.cartItem-wrapper * {
+  display: inline-block;
+  margin-right: 20px;
+}
+.cartItem-wrapper .deleteProduct {
+  width: auto;
+  background: #d32f2f;
+}
+.cartItem-Body p {
+  width: 180px;
+  margin-left: 10px;
+}
